@@ -1,5 +1,6 @@
 body {
     background-color: #00ad5b;
+    background: linear-gradient(to bottom right, #2ecc71, #27ae60);
     font-family: "Space Mono", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
