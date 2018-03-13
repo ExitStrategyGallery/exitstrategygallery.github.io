@@ -79,6 +79,18 @@ hr {
     margin-right: 30px;
 }
 
+button {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    color: white;
+    font-family: "Space Mono", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
     #map_exp li {

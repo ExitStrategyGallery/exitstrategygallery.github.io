@@ -47,7 +47,11 @@
                 </li>
                 <li>
                     <h2>Tickets:</h2>
-                    <p><b>Opening Night:</b> <a href="https://www.eventbrite.co.uk/e/exit-strategy-opening-night-tickets-44115887808">RSVP (free) on eventbrite</a><br />No booking required for 4th-8th</p>
+                    <p><b>Opening Night:</b> <noscript><a href="https://www.eventbrite.co.uk/e/exit-strategy-opening-night-tickets-44115887808" rel="noopener noreferrer" target="_blank"></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-44115887808" type="button">Get tickets (free)</button>
+                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+                    <br />No booking required for 4th-8th</p>
                 </li>
             </ul>
         </div>
@@ -100,8 +104,22 @@
         
     </div>
     
-    
-    
+    <!-- eventbrite intergration -->
+    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '44115887808',
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-44115887808',
+            onOrderComplete: exampleCallback
+        });
+    </script>
     
     <!-- mapbox api -->
     <script>
