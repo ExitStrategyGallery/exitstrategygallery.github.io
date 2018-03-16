@@ -1,10 +1,11 @@
 body {
-    background-color: #00ad5b;
-    background: linear-gradient(to bottom right, #00ad5b, #2ecc71);
+    background-color: black;
     font-family: "Space Mono", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     word-wrap: break-word;
+    padding: 0px;
+    margin: 0px;
 }
 
 a {
@@ -14,7 +15,7 @@ a {
 #content {
     width: 90%;
     max-width: 700px;
-    margin: 50px auto 50px auto;
+    margin: -100px auto 50px auto;
     text-align: center;
     overflow: auto;
 }
@@ -25,10 +26,16 @@ a {
 }
 
 .logo {
-    width: 100%;
-    max-width: 550px;
+    width: 200px;
+    height: 100px;
     fill:white;
-    margin-bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 25px;
+    background-image: url('../img/full-sign-long.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
 }
 
 #map {
@@ -91,10 +98,30 @@ button {
     font-size: 15px;
 }
 
+.hero {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
     #map_exp li {
         width: 100%;
         margin-bottom: 25px;
+    }
+    
+    .logo {
+        position:relative;
+        margin-bottom: 30px;
+    }
+    
+    #content {
+        margin-top: -50px;   
+    }
+    
+    .logo {
+        width: 170px; 
+        margin-left: -85px;
     }
 }
