@@ -104,6 +104,24 @@ button {
     max-width: 1000px;
 }
 
+h1 {
+    color: white;
+}
+
+.artist-profile {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+.artist-profile li {
+    width: 46%;
+    float: left;
+    margin-right: 4%;
+
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
     #map_exp li {
@@ -123,5 +141,9 @@ button {
     .logo {
         width: 170px; 
         margin-left: -85px;
+    }
+    
+    .artist-profile li {
+        width: 100%;   
     }
 }
